@@ -2,6 +2,5 @@
 /*
 Este é um comentario para varias linhas 
 */
-console.log("Olá Joaquim Seja bem-vindo ao estudo do JavaScript");
-console.log("Tu vais aprender a programar JS")
-console.log("Seja Resiliente")
+console.log("Olá Joaquim Seja bem-vindo ao estudo do JavaScript")
+console.log("Testar o aplicativo basico em JS");
