@@ -3,9 +3,9 @@
 
 let nome = "Joaquim"
 console.log(nome)
-var nome = "jp"
+// var nome = "jp"
 console.log(nome)
-let nome = "Hadassa"   // A variavel ira imprimir o seu valor por estar fora do escopo
+// let nome = "Hadassa"   // A variavel ira imprimir o seu valor por estar fora do escopo
 if (true){
     // let nome = "Rosa"  // A variavel não  ira imprimir por estar dentro do escopo
     var x = "Joaquim"
@@ -19,5 +19,5 @@ num = 10  //Ela vai gerar um erro do tipo TypeError: Assignment to constant vari
 
 // usando o let para alterar o const
 
-let num = 50
+// let num = 50
 console.log("Tens " +  num + " anos de idade")
