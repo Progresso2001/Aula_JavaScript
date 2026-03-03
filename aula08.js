@@ -64,3 +64,15 @@ Exemplo Detalhado: 5 ^ 3
 ^ : 00000110  (= 6)
 
 */ 
+
+let n1 = 20
+let res = n1 >> 1
+console.log(res)
+
+let n2 = 20
+let r = n1 << 4
+console.log(r)
+
+let n3 = 20
+let a = n1 >>> 3
+console.log(a)
