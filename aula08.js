@@ -12,19 +12,55 @@ Operadores Unários e Shifts
 São úteis para flags, máscaras de bits ou otimizações de performance, mas raros em apps web comuns
 */
 // usando o operador And &
-let num1 = 10
-let num2 = 4
-console.log( num1 & num2)
+// let num1 = 10
+// let num2 = 4
+// console.log( num1 & num2)
 // // usando o operador OR |
-let num1 = 10
-let num2 = 4
-resul = num1 | num2
-console.log(resul)
+// let num1 = 10
+// let num2 = 4
+// resul = num1 | num2
+// console.log(resul)
 
 // usando o operador ^ "OU Exclusivo" (em inglês, "Exclusive OR").
-let num1 = 10
-let num2 = 12
-resul = num1 ^ num2
-console.log(resul)
+// let num1 = 10
+// let num2 = 12
+// resul = num1 ^ num2
+// console.log(resul)
 
-//Nota: Para melhor pratica de conversao recomenda se usar a tabela hexadecimal
+/*
+Para determinar ou calcular operadores bitwise em JavaScript, converta os números para binário de 32 bits e aplique a operação bit a bit.
+
+Passo a Passo
+Converta operandos para inteiros de 32 bits (adiciona zeros à esquerda).
+
+Compare cada bit correspondente.
+Aplique a regra do operador e reconstrua o resultado decimal.
+​Exemplo: 5 & 3 (AND)
+
+5:  00000000 00000000 00000000 00000101
+3:  00000000 00000000 00000000 00000011
+---------------------------------------
+& : 00000000 00000000 00000000 00000001 (= 1)
+
+5:  00000101
+1:  00000001
+-----------
+| : 00000101 (= 5)
+
+O operador XOR bitwise (^) em JavaScript retorna 1 em cada bit onde os operandos diferem (um é 1 e o outro é 0).
+
+Regra da Tabela Verdade (por bit)
+| Bit 1 | Bit 2 | 1 ^ 2 |
+| ----- | ----- | ----- |
+| 0     | 0     | 0     |
+| 0     | 1     | 1     |
+| 1     | 0     | 1     |
+| 1     | 1     | 0     |
+
+Exemplo Detalhado: 5 ^ 3
+5:  00000101
+3:  00000011
+----------------
+^ : 00000110  (= 6)
+
+*/ 
