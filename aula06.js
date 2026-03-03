@@ -12,3 +12,20 @@ Igualdade e Diferença
 != (diferente solto) e !== (diferente estrito).
 Use estritos (===, !==) para evitar bugs com conversões automáticas
 */
+let num = 5;
+if (num > 4){
+    console.log("numero maior")
+}
+else{
+    console.log("numero menor")
+}
+
+let num1=10
+let num2=5
+let num3=10
+console.log(num1 > num2)
+console.log(num1 < num2)
+console.log(num1 == num3)
+console.log(num1 >= num2)
+console.log(num1 != num2)
+console.log(!(num1 == num2))

@@ -19,25 +19,25 @@ São aplicados a um único operando:
 - (unário negativo): Converte para número negativo.
 */
 
-let num1=0, num2=0, resul=0
-num1=10
-num2=6
-resul=num1+num2
-resul=num1/num2
-resul=num1%num2
-resul=num1*num2
-console.log(resul)
-console.log((num1-num2)**3)
+// let num1=0, num2=0, resul=0
+// num1=10
+// num2=6
+// resul=num1+num2
+// resul=num1/num2
+// resul=num1%num2
+// resul=num1*num2
+// console.log(resul)
+// console.log((num1-num2)**3)
 
 //usando Operadores Unários
 // São aplicados a um único operando: 
-let num1=0, num2=0, resul=0
-num1=10
-num1--
-num1++
-console.log(num1)
+// let num1=0, num2=0, resul=0
+// num1=10
+// num1--
+// num1++
+// console.log(num1)
 
-let num1=0, num2=0, resul=0
-num1=10
-num1*=2
-console.log(num1)
+// let num1=0, num2=0, resul=0
+// num1=10
+// num1*=2
+// console.log(num1)
