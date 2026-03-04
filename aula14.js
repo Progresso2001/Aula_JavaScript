@@ -227,41 +227,56 @@
 // limpa de iterar sobre valores de arrays, 
 // strings, Sets, Maps e outros iteráveis
 // Sintaxe Básica
-// for (let valor of iteravel) {
-//     // valor contém cada elemento diretamente
-// }
-// */
-// const usuarios = ["João", "Maria", "Pedro"];
+// // for (let valor of iteravel) {
+// //     // valor contém cada elemento diretamente
+// // }
+// // */
+// // const usuarios = ["João", "Maria", "Pedro"];
 
-// for (let usuario of usuarios) {
-//     console.log(`Olá, ${usuario}!`);
-// }
-// // Iterando Strings
-// const nome = "Luanda";
-// for (let letra of nome) {
-//     console.log(letra);
-// }
+// // for (let usuario of usuarios) {
+// //     console.log(`Olá, ${usuario}!`);
+// // }
+// // // Iterando Strings
+// // const nome = "Luanda";
+// // for (let letra of nome) {
+// //     console.log(letra);
+// // }
 
-console.log("Estudando JavaScript")
-for(let i = 0; i<5; i++){
-    console.log("Estudando em data: " + i)
-}
-console.log("Avançar com Python")
+// console.log("Estudando JavaScript")
+// for(let i = 0; i<5; i++){
+//     console.log("Estudando em data: " + i)
+// }
+// console.log("Avançar com Python")
 
-const cidades={1:"Luanda", 2:"Cabinda",4:"Bie", 5:"Uige", 6:"Cunene"}
-for(let i in cidades){
-    console.log(`${i}:${cidades[i]}`)
-}
+// const cidades={1:"Luanda", 2:"Cabinda",4:"Bie", 5:"Uige", 6:"Cunene"}
+// for(let i in cidades){
+//     console.log(`${i}:${cidades[i]}`)
+// }
 // Factorial
 // 5!=5*4*3*2*1=120
-let n=5
-let fat=1
-while(n>=1){
-    fat*=n
-    n--
-}
-console.log("O valor do factorial de 5 é: " + fat)
+// let n=5
+// let fat=1
+// while(n>=1){
+//     fat*=n
+//     n--
+// }
+// console.log("O valor do factorial de 5 é: " + fat)
 
+
+// exercicio
+
+let m=0
+let max=1000
+let pares=0
+
+for(let i =m;i<max;i++){
+    if(i%2!=0){
+        continue
+    }
+    pares++
+}
+console.log("Quantidade de pares: " + pares)
+console.log("Pare o programa ")
 
 
 
