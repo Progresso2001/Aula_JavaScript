@@ -10,7 +10,7 @@ if(idade >=10){
 }
 
 // if and else
-let idade = 10;
+// let idade = 10;
 if(idade >=18){
     console.log("Autorizado a consumir")
 }else{
@@ -91,18 +91,18 @@ console.log(diaSemana); // "Quarta"
 
 // Casos Múltiplos
 // Vários case podem compartilhar o mesmo código sem break:
-let nota = 7;
-switch (nota) {
-    case 9:
-    case 10:
-        console.log("Excelente!");
-        break;
-    case 7:
-    case 8:
-        console.log("Bom!");
-        break;
-    default:
-        console.log("Estude mais!");
-}
+// let nota = 7;
+// switch (nota) {
+//     case 9:
+//     case 10:
+//         console.log("Excelente!");
+//         break;
+//     case 7:
+//     case 8:
+//         console.log("Bom!");
+//         break;
+//     default:
+//         console.log("Estude mais!");
+// }
 
 
