@@ -10,14 +10,14 @@ Exemplo: let i = 5; let x = i++; resulta em x = 5 e i = 6.
 Comparação em Loop
 Em loops for, como for (let i = 0; i < 3; i++) ou ++i, o resultado é idêntico porque o valor de i não é atribuído a outra variável no teste da condição
 */ 
-let n = 13
-console.log(n++)
+// let n = 13
+// console.log(n++)
 // Pré-incremento
-let i = 4
+// let i = 4
 console.log(++i)
 // Pos-incremento
-let i = 4
-console.log(i++)
+// let i = 4
+// console.log(i++)
 
 let y = 3
 
