@@ -35,3 +35,6 @@ function aluno(nome, nota){
 const al1= new aluno("Joaquim", 100)
 al1.dado_anonimo()
 al1.dado_arrow()
+
+
+
