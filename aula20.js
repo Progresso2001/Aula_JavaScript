@@ -7,7 +7,7 @@ var minhaFrutas=new Array(
     'Maça',
     'Uva',
 );
-minhaFrutas[3] = "mamau"
+minhaFrutas[3] = undefined
 if(3 in minhaFrutas){
     console.log("Nova lista de frutas: " + minhaFrutas)
 
