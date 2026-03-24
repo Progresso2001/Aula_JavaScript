@@ -178,8 +178,24 @@
 // console.log(c.some(isNumber))
 
 //  reduce()
-var a = [10, 20, 30]
-var total = a.reduce(function(primeiro, segundo){
-    return primeiro +  segundo;
-}, 0)
-console.log(total)
+// var a = [10, 20, 30]
+// var total = a.reduce(function(primeiro, segundo){
+//     return primeiro +  segundo;
+// }, 0)
+// console.log(total)
+
+// Array multidimensionais
+
+// var a = new Array(4);
+// for(i = 0; i < 4; i++){
+//     a[i] = new Array(4);
+//     for(j=0; j < 4; j++){
+//         a[i][j] = "["+ i + "," + j + "]"
+//     }
+// }
+// console.log(a)
+
+// Metodos Array-prototype
+// Array.prototype.forEach.call("uma string", function(chr){
+//     console.log(chr)
+// });
