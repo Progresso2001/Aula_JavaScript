@@ -16,5 +16,5 @@ console.log(sayings.has("cat"))
 //     console.log(key + " goes " + value)
 // }
 
-console.log(sayings.clear());
+console.log(sayings.clear()); 
 console.log(sayings.size);
