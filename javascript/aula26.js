@@ -10,3 +10,30 @@ const pessoa = {
 };
 console.log(pessoa)
 pessoa.saudar()
+
+// Exemplos
+
+// Criando um objeto literal "carro"
+const carro = {
+  marca: "Toyota",           // Propriedade
+  modelo: "Corolla",         // Propriedade
+  ano: 2022,                 // Propriedade
+
+  // Método usando function tradicional
+  detalhes: function() {
+    return `${this.marca} ${this.modelo} (${this.ano})`;
+  },
+
+  // Método usando sintaxe curta (ES6+)
+  ligar() {
+    console.log(`${this.marca} está ligado!`);
+  }
+};
+
+// Acessando propriedades
+console.log(carro.marca);       // Toyota
+console.log(carro["modelo"]);   // Corolla
+
+// Chamando métodos
+console.log(carro.detalhes());  // Toyota Corolla (2022)
+carro.ligar();                  // Toyota está ligado!
