@@ -46,26 +46,53 @@
 
 // iterando usando o laço for...in
 
-function mostrarProps(obj, nomeDoObj) {
-  var resultado = "";
-  for (var i in obj) {
-    if (obj.hasOwnProperty(i)) {
-      resultado += nomeDoObj + "." + i + " = " + obj[i] + "\n";
-    }
-  }
-  return resultado;
-}
+// function mostrarProps(obj, nomeDoObj) {
+//   var resultado = "";
+//   for (var i in obj) {
+//     if (obj.hasOwnProperty(i)) {
+//       resultado += nomeDoObj + "." + i + " = " + obj[i] + "\n";
+//     }
+//   }
+//   return resultado;
+// }
 
 // Criar um objecto
 
-var meuCarro = {
-    fabricacao :"Hyundai",
-    modelo : "Hyundai 1",
-    ano : 2001
+// var meuCarro = {
+//     fabricacao :"Hyundai",
+//     modelo : "Hyundai 1",
+//     ano : 2001
+// }
+
+// // Chamar a função 
+// var props = mostrarProps(meuCarro, "meuCarro");
+
+// // mostrar o resultado
+// console.log(props)
+
+//USANDO PROPRIDADES ENUMERAVEIS
+
+function listarTodasAsPropriedades(o) {
+  var objectoASerInspecionado;
+  var resultado = [];
+
+  for (
+    objectoASerInspecionado = o;
+    objectoASerInspecionado !== null;
+    objectoASerInspecionado = Object.getPrototypeOf(objectoASerInspecionado)
+  ) {
+    resultado = resultado.concat(
+      Object.getOwnPropertyNames(objectoASerInspecionado),
+    );
+  }
+
+  return resultado;
 }
 
-// Chamar a função 
-var props = mostrarProps(meuCarro, "meuCarro");
+const pessoa = {
+    nome: "Progresso",
+    idade: 33,
+    email: "progresso@yandex.com"
+}
 
-// mostrar o resultado
-console.log(props)
+console.log(listarTodasAsPropriedades(pessoa))
