@@ -72,25 +72,96 @@
 
 // Exemplo pratico 
 
-const criarProduto = (nome, preco, categoria) => {
-    const desconto = preco * 0.1;
-    return{
-        // shorthand property
-        nome, preco,
-        // Prop. computada
-        [`${categoria}_id`]: Math.random().toString(36).substring(2, 9),
+// const criarProduto = (nome, preco, categoria) => {
+//     const desconto = preco * 0.1;
+//     return{
+//         // shorthand property
+//         nome, preco,
+//         // Prop. computada
+//         [`${categoria}_id`]: Math.random().toString(36).substring(2, 9),
 
-        // Metodos abreviados
-        getPrecoFinal(){
-            return this.preco - desconto;
-        },
-        // getter
-        get info(){
-            return `${this.nome} - R$ ${this.preco}`
-        }       
-    };
-};
+//         // Metodos abreviados
+//         getPrecoFinal(){
+//             return this.preco - desconto;
+//         },
+//         // getter
+//         get info(){
+//             return `${this.nome} - R$ ${this.preco}`
+//         }       
+//     };
+// };
 
-const produto = criarProduto("Notebook", 3500, "Electronico")
-console.log(produto.info);
-console.log("Valor do desconto do produto: " + produto.getPrecoFinal())
+// const produto = criarProduto("Notebook", 3500, "Electronico")
+// console.log(produto.info);
+// console.log("Valor do desconto do produto: " + produto.getPrecoFinal())
+
+// -------------------------- FUNÇÕES CONSTRUCTORAS DE OBJECTOS ------------------------
+
+// function Pessoa(nome, idade, profissao){
+//     this.nome = nome,
+//     this.idade = idade,
+//     this.profissao = profissao,
+//     // Metodo de instancia
+//     this.apresentar = function(){
+//         return `Olá sou o ${this.nome} e tenho ${this.idade} anos e sou ${this.profissao}.\n`
+//     }
+// };
+// // criando instancia com new
+
+// const pessoa_1 = new Pessoa("Maria", 23, "Engenheira de dados")
+// const pessoa_2 = new Pessoa("Joaquim", 32)
+// pessoa_2.profissao = "Programador" //Adicionado prop no objecto criado
+// console.log(pessoa_1.apresentar())
+// console.log(pessoa_2.apresentar())
+
+// Problemas no Metodo de construtor (ineficiente)
+
+// function Carro(modelo){
+//     this.modelo = modelo
+//     this.ligar = function(){
+//         // X Evitar usar porque cria nova funcao em cada instancia
+//         console.log(`${this.modelo} ligado!`)
+//     }
+// };
+
+// const car1 = new Carro("Fusca")
+// console.log(car1.ligar())
+// const car2 = new Carro("Gol")
+// console.log(car2.ligar()) 
+// console.log(car1.ligar===car2.ligar)
+
+// Solucao: usar Prototype (eficiente)
+
+// function Carro(modelo, ano){
+//     this.modelo = modelo,
+//     this.ano = ano
+//     Carro.prototype.ligar = function(){
+        
+//         console.log(`${this.modelo} ligado!`)
+//     };
+//     Carro.prototype.desligar = function(){
+//         console.log(`${this.modelo} esta desligado, desde ${this.ano}`)
+//     }
+// };
+
+// const car1 = new Carro("Fusca", 1907)
+// const car2 = new Carro("Gol", 1876)
+// console.log(car1.ligar())
+// console.log(car2.desligar())
+// console.log(car1.ligar === car2.ligar)
+// console.log(car1 instanceof Carro)
+
+
+function Pessoa(nome, idade) {
+  this.nome = nome
+  this.idade = idade
+}
+
+Pessoa.prototype.saudar = function () {
+  console.log(`Olá, eu sou ${this.nome} e tenho ${this.idade} anos`)
+}
+
+const p1 = new Pessoa("João", 25)
+console.log(p1.saudar())
+
+
