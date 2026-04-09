@@ -59,3 +59,19 @@ prod.preco = -5 //set
 prod.preco =150  //get
 console.log(prod.preco)
 
+// usando o prototype e Object.defineProperty
+
+var dia  =  Date.prototype;
+Object.defineProperty(dia, "ano", {
+    get: function(){
+        return this.getFullYear();
+    },
+    set: function(y){
+        this.setFullYear(y);
+    }
+});
+var agora = new Date();
+console.log(agora.ano)
+agora.ano = 2026
+console.log(agora.ano)
+console.log(agora)
