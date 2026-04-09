@@ -10,7 +10,7 @@ var num = {
     },
 };
 
-console.log(num.a)
+console.log(num.a) 
 console.log(num.b) //getter
 num.c = 50 //setter
 console.log(num.a)
@@ -58,3 +58,4 @@ console.log(prod.preco)
 prod.preco = -5 //set
 prod.preco =150  //get
 console.log(prod.preco)
+
