@@ -29,7 +29,7 @@ var pessoa = `{
 var jsonparse = JSON.parse(pessoa)
 console.log(jsonparse)
 
-Usando array de objectos
+// Usando array de objectos
 
 const produtos = [
     {id: 1, nome: "Notebook", preco: 2500},
@@ -41,7 +41,7 @@ console.log(typeof produtos)
 console.log(typeof prodString)
 console.log(prodString)
 
-Exemplo 3: Com parâmetros (espaçamento para formato legível)
+// Exemplo 3: Com parâmetros (espaçamento para formato legível)
 
 const pessoa ={
     nome: "Carlos",
@@ -53,7 +53,7 @@ const pessoa ={
 
 console.log(JSON.stringify(pessoa, null, 2))
 
-Exemplo 4: Usando replacer (filtrar propriedades)
+// Exemplo 4: Usando replacer (filtrar propriedades)
 
 const dados = {
   nome: "Maria",
@@ -61,24 +61,24 @@ const dados = {
   email: "maria@email.com"
 }
 
-Remover a senha do Json
-const dadosFiltrados = JSON.stringify(dados, ["nome", "email"])
-console.log(dadosFiltrados)
-usando funcao
+// Remover a senha do Json
+const dadosFiltrados_1 = JSON.stringify(dados, ["nome", "email"])
+console.log(dadosFiltrados_1)
+// usando funcao
 const dadosFiltrados = JSON.stringify(dados, (key, value) => {
     if (key == "senha") return undefined
     return value
 })
 console.log(dadosFiltrados)
 
-Exemplo 2: Array JSON
+// Exemplo 2: Array JSON
 const jsonArray = '[{"produto":"Celular","preco":1500},{"produto":"Fone","preco":200}]'
 const listaProdutos = JSON.parse(jsonArray)
 console.log(listaProdutos)
 console.log(listaProdutos[0].produto) 
 console.log(listaProdutos[1].preco)
 
-Tratamento de erros
+// Tratamento de erros
 
 const jsonString = '{"nome":"Pedro","idade":28,"cidade":"São Paulo"}'
 function parseJsonSeguro(jsonString){
@@ -112,9 +112,9 @@ console.log(dadosTransformados.nascimento)
 console.log(dadosTransformados.preco)      
 console.log(typeof dadosTransformados.preco)
 
-Salvando dados no localStorage
+// Salvando dados no localStorage
 
-Salvar dados do usuário
+// Salvar dados do usuário
 const usuarioAtual = {
   id: 1,
   nome: "Mariana",
@@ -136,9 +136,9 @@ usuarioRecuperado.ultimoAcesso = new Date(usuarioRecuperado.ultimoAcesso)
 console.log(usuarioRecuperado.nome) 
 console.log(usuarioRecuperado.preferencias.tema)
 
-Simulando comunicação com API
+// Simulando comunicação com API
 
-Dados que chegam do servidor (string JSON)
+// Dados que chegam do servidor (string JSON)
 const respostaAPI = `
 {
   "status": "sucesso",
