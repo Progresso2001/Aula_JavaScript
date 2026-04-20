@@ -26,8 +26,8 @@ var pessoa = `{
     ]
 }`
 
-var jsonparse = JSON.parse(pessoa)
-console.log(jsonparse)
+var jsonParse = JSON.parse(pessoa)
+console.log(jsonParse)
 
 // Usando array de objectos
 
