@@ -2,7 +2,7 @@
 
 var nomes = ['joaquim', 'Eliseu', 'Menianga']
 nomes.forEach(item => console.log(item))
-usando funcao anonima
+// usando funcao anonima
 nomes.forEach(function(nome){
     console.log(nome)
 })
@@ -124,7 +124,7 @@ let arr = [4, 5, 3, 2, 1]
 let remover = arr.splice(1, 1)
 console.log(remover)
 
-//slice()
+slice()
 let arr = [4, 5, 3, 2, 1] 
 let newArr = arr.slice(1, 4)
 console.log(newArr)
